@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  background-color: #0f172a; /* slate-900 */
+  font-family: "Inter", sans-serif;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-white;
+  }
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
